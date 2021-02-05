@@ -1,0 +1,145 @@
+@import "vars"
+/*==========  Desktop First  ==========*/
+
+//Extra large: ≥1440px
++media-breakpoint-down(xl)
+
+//Large: ≥1200px  max-width: 1439px
++media-breakpoint-down(lg)
+
+//Medium: ≥992px max-width: 1199px
++media-breakpoint-down(md)
+	.second
+		padding-bottom: 50px
+	.layouts
+		padding-top: 0
+	.first
+		&-block
+			display: block
+			position: static
+			transform: none
+			margin-bottom: 50px
+			&__wrap
+				&_column
+					min-width: inherit
+
+
+//Small: ≥768px max-width: 991px
++media-breakpoint-down(sm)
+	.slider
+		margin-right: 0
+	.layouts
+		&-menu
+			&__item
+				font-size: 16px
+		&-item
+			margin-bottom: 40px
+		.col-md-4:last-child
+			.layouts-item
+				margin-bottom: 0
+	.first
+		&-block
+			&__wrap
+				flex-direction: column
+				&_column
+					flex-direction: row
+			&__ttl
+				padding-right: 0
+				margin-right: 0
+				border: none
+				margin-bottom: 20px
+
+//Extra small: ≥576px max-width: 767px
++media-breakpoint-down(xs)
+	.head
+		&-container
+			height: calc(100vh - 162px)
+	.nav
+		&-logo
+			margin: 0 auto 20px
+		&-addr, &-phone, &-phone a:first-child
+			display: block
+			text-align: center
+			margin-right: 0
+		&-link
+			margin: 0 auto
+	.layouts
+		&-menu
+			display: block
+			&__item:nth-child(2)
+				border-color: transparent
+	.second
+		&-item
+			&:last-child
+				margin-bottom: 40px
+	.last
+		padding-top: 0
+		padding-bottom: 0
+		&:before
+			display: none
+		&-block
+			padding: 20px
+			&__price
+				padding-right: 20px
+				margin-right: 20px
+				white-space: nowrap
+			&__credit
+				span
+					font-size: 20px
+		.p0
+			padding-left: 0
+			padding-right: 0
+	.first
+		&-item
+			flex: 1 0 50%
+			&_mb0
+				margin-bottom: 20px
+		&-btn
+			margin-top: 0
+	.dev
+		&-logo
+			margin: 0 auto 30px
+		&-ttl
+			margin-top: 30px
+	.foot
+		padding: 50px 0
+		&-logo
+			margin-bottom: 20px
+
+//Extra small: >0 max-width: 575px
++media-breakpoint-down(xxs)
+	.layouts
+		padding-bottom: 50px
+	.last
+		&-block
+			position: static
+			margin-left: 0
+			transform: none
+	.foot
+		&-logo
+			margin: 0 auto 20px
+		&-addr, &-phone, &-phone a:first-child
+			display: block
+			text-align: center
+			margin-right: 0
+		&-addr
+			margin-bottom: 20px
+		&-link
+			margin: 0 auto
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
